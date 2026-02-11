@@ -203,7 +203,7 @@
 
   .hero h1 {
       font-family: 'Merriweather', Georgia, serif;
-      font-size: 32px;
+      font-size: 24px;
       font-weight: 700;
       line-height: 1.2;
       color: #fff;
@@ -265,7 +265,7 @@
   /* ===== VIDEO ===== */
   .video-section {
       background: #111111;
-      padding: 0 20px 40px;
+      padding: 0 12px 40px;
   }
 
   .video-wrapper {
@@ -928,6 +928,19 @@
           display: block;
       }
 
+      .hero {
+          padding: 24px 16px 20px;
+      }
+
+      .hero h1 {
+          font-size: 20px;
+          margin-bottom: 24px;
+      }
+
+      .video-section {
+          padding: 0 8px 32px;
+      }
+
       .guarantee-content {
           flex-direction: column;
           align-items: center;
@@ -940,6 +953,24 @@
 
       .footer-warning span {
           font-size: 10px;
+      }
+
+      /* Ordem dos potes no mobile: 6, 3, 1 */
+      .pricing-grid {
+          display: flex;
+          flex-direction: column;
+      }
+
+      .pricing-card:nth-child(1) {
+          order: 3;
+      }
+
+      .pricing-card:nth-child(2) {
+          order: 1;
+      }
+
+      .pricing-card:nth-child(3) {
+          order: 2;
       }
   }
 
